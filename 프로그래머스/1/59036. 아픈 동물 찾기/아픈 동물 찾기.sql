@@ -1,0 +1,4 @@
+SELECT ai.ANIMAL_ID , ai.NAME
+FROM ANIMAL_INS AS ai
+where ai.INTAKE_CONDITION like 'Sick'
+order by ai.ANIMAL_ID
