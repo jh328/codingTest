@@ -1,4 +1,5 @@
 function solution(sides) {
-    let copySides = [...sides].sort((a,b) => a-b);
-    return copySides[0] + copySides[1] > copySides[2] ? 1 : 2
+    sides = sides.sort((a,b) => a-b);
+    return sides[0] + sides[1] > sides[2] ? 1 :2
+    
 }
