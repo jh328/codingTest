@@ -1,22 +1,13 @@
 class Solution {
     public int[] solution(String s) {
-        int[] answer = new int[s.length()];
+        int[] answer = {};
         
         for (int i = 0; i<s.length(); i++){
-
-            boolean found = false;
-            
-            for(int j = i - 1; j >= 0; j--){
+          for(int j = i - 1; j >= 0; j--){
               if(s.charAt(i) == s.charAt(j)){
-                  answer[i] = i - j;
-                  found = true;
-                  break;
+                  return -1;
               }
           }
-            
-            if(!found){
-                answer[i] = -1;
-            }
         }
         return answer;
     }
